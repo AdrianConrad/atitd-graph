@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="tale">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="discipline" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:attribute name="name" use="required" />
+            <xs:attribute name="color" use="optional" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="technology" maxOccurs="unbounded">
+          <xs:complexType>
+            <xs:sequence>
+                <xs:element name="prerequisite" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:attribute name="technology" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="discipline" use="required" />
+            <xs:attribute name="name" use="required" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="version" type="xs:integer" use="required" />
+    </xs:complexType>
+    <xs:key name="disciplineKey">
+        <xs:selector xpath=".//discipline"></xs:selector>
+        <xs:field xpath="@name"></xs:field>
+    </xs:key>
+    <xs:key name="technologyKey">
+        <xs:selector xpath=".//technology"></xs:selector>
+        <xs:field xpath="@name"></xs:field>
+    </xs:key>
+    <xs:keyref name="technologyDisciplineRef" refer="disciplineKey">
+        <xs:selector xpath=".//technology"></xs:selector>
+        <xs:field xpath="@discipline"></xs:field>
+    </xs:keyref>
+    <xs:keyref name="prerequisiteTechnologyRef" refer="technologyKey">
+        <xs:selector xpath=".//technology/prerequisite"></xs:selector>
+        <xs:field xpath="@technology"></xs:field>
+    </xs:keyref>
+  </xs:element>
+</xs:schema>

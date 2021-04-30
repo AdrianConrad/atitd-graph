@@ -1,0 +1,281 @@
+﻿
+    digraph tale {
+        node [style = "filled"]
+
+      
+      subgraph tech_cluster_ID0E5 {
+        tech_ID0E5 [
+            label = "Stonework 1",
+            color = tan
+        ]
+        
+      }
+  
+      subgraph tech_cluster_ID0ECB {
+        tech_ID0ECB [
+            label = "Wood Treatment",
+            color = tan
+        ]
+        
+    tech_ID0E1B -> tech_ID0ECB
+      }
+  
+      subgraph tech_cluster_ID0EKB {
+        tech_ID0EKB [
+            label = "Blacksmithing 1",
+            color = orchid
+        ]
+        
+    tech_ID0EOF -> tech_ID0EKB
+      }
+  
+      subgraph tech_cluster_ID0ESB {
+        tech_ID0ESB [
+            label = "Glassblowing 1",
+            color = orchid
+        ]
+        
+    tech_ID0E4C -> tech_ID0ESB
+      }
+  
+      subgraph tech_cluster_ID0E1B {
+        tech_ID0E1B [
+            label = "Glassblowing 2",
+            color = orchid
+        ]
+        
+    tech_ID0ESB -> tech_ID0E1B
+      }
+  
+      subgraph tech_cluster_ID0ECC {
+        tech_ID0ECC [
+            label = "Lapidary",
+            color = orchid
+        ]
+        
+    tech_ID0EKH -> tech_ID0ECC
+      }
+  
+      subgraph tech_cluster_ID0EKC {
+        tech_ID0EKC [
+            label = "Raeli Pottery",
+            color = orchid
+        ]
+        
+    tech_ID0E1B -> tech_ID0EKC
+      }
+  
+      subgraph tech_cluster_ID0ESC {
+        tech_ID0ESC [
+            label = "Pyrolysis 1",
+            color = goldenrod
+        ]
+        
+    tech_ID0ESH -> tech_ID0ESC
+    tech_ID0E5 -> tech_ID0ESC
+      }
+  
+      subgraph tech_cluster_ID0E4C {
+        tech_ID0E4C [
+            label = "Pyrolysis 2",
+            color = goldenrod
+        ]
+        
+    tech_ID0ESC -> tech_ID0E4C
+      }
+  
+      subgraph tech_cluster_ID0EFD {
+        tech_ID0EFD [
+            label = "Casting 1",
+            color = salmon
+        ]
+        
+    tech_ID0EMG -> tech_ID0EFD
+    tech_ID0EOF -> tech_ID0EFD
+      }
+  
+      subgraph tech_cluster_ID0EQD {
+        tech_ID0EQD [
+            label = "Casting 2",
+            color = salmon
+        ]
+        
+    tech_ID0EFD -> tech_ID0EQD
+      }
+  
+      subgraph tech_cluster_ID0EYD {
+        tech_ID0EYD [
+            label = "Chariot Repair",
+            color = salmon
+        ]
+        
+    tech_ID0E5 -> tech_ID0EYD
+      }
+  
+      subgraph tech_cluster_ID0EAE {
+        tech_ID0EAE [
+            label = "Deep Well Construction",
+            color = salmon
+        ]
+        
+    tech_ID0EIE -> tech_ID0EAE
+      }
+  
+      subgraph tech_cluster_ID0EIE {
+        tech_ID0EIE [
+            label = "Metallurgy 1",
+            color = salmon
+        ]
+        
+    tech_ID0EOF -> tech_ID0EIE
+      }
+  
+      subgraph tech_cluster_ID0EQE {
+        tech_ID0EQE [
+            label = "Metallurgy 2",
+            color = salmon
+        ]
+        
+    tech_ID0EIE -> tech_ID0EQE
+    tech_ID0EOF -> tech_ID0EQE
+      }
+  
+      subgraph tech_cluster_ID0E2E {
+        tech_ID0E2E [
+            label = "Metallurgy 3",
+            color = salmon
+        ]
+        
+    tech_ID0EQE -> tech_ID0E2E
+    tech_ID0EWF -> tech_ID0E2E
+      }
+  
+      subgraph tech_cluster_ID0EGF {
+        tech_ID0EGF [
+            label = "Mining 1",
+            color = salmon
+        ]
+        
+    tech_ID0E5 -> tech_ID0EGF
+      }
+  
+      subgraph tech_cluster_ID0EOF {
+        tech_ID0EOF [
+            label = "Mining 2",
+            color = salmon
+        ]
+        
+    tech_ID0EGF -> tech_ID0EOF
+      }
+  
+      subgraph tech_cluster_ID0EWF {
+        tech_ID0EWF [
+            label = "Mining 3",
+            color = salmon
+        ]
+        
+    tech_ID0EIE -> tech_ID0EWF
+    tech_ID0EOF -> tech_ID0EWF
+      }
+  
+      subgraph tech_cluster_ID0EBG {
+        tech_ID0EBG [
+            label = "Chemistry 1",
+            color = skyblue
+        ]
+        
+    tech_ID0EKB -> tech_ID0EBG
+    tech_ID0EFD -> tech_ID0EBG
+      }
+  
+      subgraph tech_cluster_ID0EMG {
+        tech_ID0EMG [
+            label = "Beekeeping",
+            color = skyblue
+        ]
+        
+    tech_ID0EOH -> tech_ID0EMG
+      }
+  
+      subgraph tech_cluster_ID0EUG {
+        tech_ID0EUG [
+            label = "Cross Breeding",
+            color = skyblue
+        ]
+        
+    tech_ID0EBG -> tech_ID0EUG
+    tech_ID0EWH -> tech_ID0EUG
+    tech_ID0EKAAC -> tech_ID0EUG
+      }
+  
+      subgraph tech_cluster_ID0ECH {
+        tech_ID0ECH [
+            label = "Fine Balance",
+            color = skyblue
+        ]
+        
+    tech_ID0EKH -> tech_ID0ECH
+      }
+  
+      subgraph tech_cluster_ID0EKH {
+        tech_ID0EKH [
+            label = "Water Mining",
+            color = skyblue
+        ]
+        
+      }
+  
+      subgraph tech_cluster_ID0EOH {
+        tech_ID0EOH [
+            label = "Animal Husbandry 1",
+            color = aquamarine
+        ]
+        
+      }
+  
+      subgraph tech_cluster_ID0ESH {
+        tech_ID0ESH [
+            label = "Farming 1",
+            color = aquamarine
+        ]
+        
+      }
+  
+      subgraph tech_cluster_ID0EWH {
+        tech_ID0EWH [
+            label = "Gardening 1",
+            color = aquamarine
+        ]
+        
+    tech_ID0EGAAC -> tech_ID0EWH
+      }
+  
+      subgraph tech_cluster_ID0E4H {
+        tech_ID0E4H [
+            label = "Gardening 2",
+            color = aquamarine
+        ]
+        
+    tech_ID0ECB -> tech_ID0E4H
+      }
+  
+      subgraph tech_cluster_ID0EGAAC {
+        tech_ID0EGAAC [
+            label = "Horticulture 1",
+            color = aquamarine
+        ]
+        
+      }
+  
+      subgraph tech_cluster_ID0EKAAC {
+        tech_ID0EKAAC [
+            label = "Viticulture",
+            color = aquamarine
+        ]
+        
+    tech_ID0EKB -> tech_ID0EKAAC
+    tech_ID0ESH -> tech_ID0EKAAC
+      }
+  
+    }
+  

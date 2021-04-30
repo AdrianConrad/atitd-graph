@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tale xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="tale.xsd" version="9">
+    <discipline name="Architecture" color="tan"/>
+    <discipline name="Art and Music" color="orchid"/>
+    <discipline name="Human Body" color="goldenrod"/>
+    <discipline name="Natural Philosophy" color="salmon"/>
+    <discipline name="Thought" color="skyblue"/>
+    <discipline name="Worship" color="aquamarine"/>
+
+    <technology discipline="Architecture" name="Stonework 1"></technology>
+    <technology discipline="Architecture" name="Wood Treatment">
+        <prerequisite technology="Glassblowing 2" />
+    </technology>
+
+    <technology discipline="Art and Music" name="Blacksmithing 1">
+        <prerequisite technology="Mining 2" />
+    </technology>
+    <technology discipline="Art and Music" name="Glassblowing 1">
+        <prerequisite technology="Pyrolysis 2" />
+    </technology>
+    <technology discipline="Art and Music" name="Glassblowing 2">
+        <prerequisite technology="Glassblowing 1" />
+    </technology>
+    <technology discipline="Art and Music" name="Lapidary">
+        <prerequisite technology="Water Mining" />
+    </technology>
+    <technology discipline="Art and Music" name="Raeli Pottery">
+        <prerequisite technology="Glassblowing 2" />
+    </technology>
+
+    <technology discipline="Human Body" name="Pyrolysis 1">
+        <prerequisite technology="Farming 1" />
+        <prerequisite technology="Stonework 1" />
+    </technology>
+    <technology discipline="Human Body" name="Pyrolysis 2">
+        <prerequisite technology="Pyrolysis 1" />
+    </technology>
+
+    <technology discipline="Natural Philosophy" name="Casting 1">
+        <prerequisite technology="Beekeeping" />
+        <prerequisite technology="Mining 2" />
+    </technology>
+    <technology discipline="Natural Philosophy" name="Casting 2">
+        <prerequisite technology="Casting 1" />
+    </technology>
+    <technology discipline="Natural Philosophy" name="Chariot Repair">
+        <prerequisite technology="Stonework 1" />
+    </technology>
+    <technology discipline="Natural Philosophy" name="Deep Well Construction">
+        <prerequisite technology="Metallurgy 1" />
+    </technology>
+    <technology discipline="Natural Philosophy" name="Metallurgy 1">
+        <prerequisite technology="Mining 2" />
+    </technology>
+    <technology discipline="Natural Philosophy" name="Metallurgy 2">
+        <prerequisite technology="Metallurgy 1" />
+        <prerequisite technology="Mining 2" />
+    </technology>
+    <technology discipline="Natural Philosophy" name="Metallurgy 3">
+        <prerequisite technology="Metallurgy 2" />
+        <prerequisite technology="Mining 3" />
+    </technology>
+    <technology discipline="Natural Philosophy" name="Mining 1">
+        <prerequisite technology="Stonework 1" />
+    </technology>
+    <technology discipline="Natural Philosophy" name="Mining 2">
+        <prerequisite technology="Mining 1" />
+    </technology>
+    <technology discipline="Natural Philosophy" name="Mining 3">
+        <prerequisite technology="Metallurgy 1" />
+        <prerequisite technology="Mining 2" />
+    </technology>
+    
+    <technology discipline="Thought" name="Chemistry 1">
+        <prerequisite technology="Blacksmithing 1" />
+        <prerequisite technology="Casting 1" />
+    </technology>
+    <technology discipline="Thought" name="Beekeeping">
+        <prerequisite technology="Animal Husbandry 1" />
+    </technology>
+    <technology discipline="Thought" name="Cross Breeding">
+        <prerequisite technology="Chemistry 1" />
+        <prerequisite technology="Gardening 1" />
+        <prerequisite technology="Viticulture" />
+    </technology>
+    <technology discipline="Thought" name="Fine Balance">
+        <prerequisite technology="Water Mining" />
+    </technology>
+    <technology discipline="Thought" name="Water Mining"></technology>
+
+    <technology discipline="Worship" name="Animal Husbandry 1"></technology>
+    <technology discipline="Worship" name="Farming 1"></technology>
+    <technology discipline="Worship" name="Gardening 1">
+        <prerequisite technology="Horticulture 1" /></technology>
+    <technology discipline="Worship" name="Gardening 2">
+        <prerequisite technology="Wood Treatment" />
+    </technology>
+    <technology discipline="Worship" name="Horticulture 1"></technology>
+    <technology discipline="Worship" name="Viticulture">
+        <prerequisite technology="Blacksmithing 1" />
+        <prerequisite technology="Farming 1" />
+    </technology>
+</tale>
