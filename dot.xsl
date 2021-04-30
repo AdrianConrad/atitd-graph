@@ -6,7 +6,7 @@
     digraph tale {
         node [style = "filled"]
 
-      <xsl:apply-templates select="technology"/>
+      <xsl:apply-templates select="discipline/technology"/>
     }
   </xsl:template>
 
@@ -14,7 +14,7 @@
       subgraph tech_cluster_<xsl:value-of select="generate-id()" /> {
         tech_<xsl:value-of select="generate-id()" /> [
             label = "<xsl:value-of select="@name" />",
-            color = <xsl:value-of select="//discipline[@name=current()/@discipline]/@color" />
+            color = <xsl:value-of select="./parent::discipline/@color" />
         ]
         <xsl:apply-templates select="prerequisite"/>
       }

@@ -5,21 +5,22 @@
       <xs:sequence>
         <xs:element name="discipline" maxOccurs="unbounded">
           <xs:complexType>
+            <xs:sequence>
+              <xs:element name="technology" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                      <xs:element name="prerequisite" minOccurs="0" maxOccurs="unbounded">
+                          <xs:complexType>
+                              <xs:attribute name="technology" use="required" />
+                          </xs:complexType>
+                      </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="name" use="required" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
             <xs:attribute name="name" use="required" />
             <xs:attribute name="color" use="optional" />
-          </xs:complexType>
-        </xs:element>
-        <xs:element name="technology" maxOccurs="unbounded">
-          <xs:complexType>
-            <xs:sequence>
-                <xs:element name="prerequisite" minOccurs="0" maxOccurs="unbounded">
-                    <xs:complexType>
-                        <xs:attribute name="technology" use="required" />
-                    </xs:complexType>
-                </xs:element>
-            </xs:sequence>
-            <xs:attribute name="discipline" use="required" />
-            <xs:attribute name="name" use="required" />
           </xs:complexType>
         </xs:element>
       </xs:sequence>
